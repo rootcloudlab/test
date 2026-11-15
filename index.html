@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf2f8;
+        }
+
+        .container {
+            width: 350px;
+            margin: 50px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2874a6;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 9px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        .gender input {
+            width: auto;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #2874a6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1b4f72;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Registration Form</h2>
+
+    <form>
+
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter password" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" placeholder="Enter phone number">
+
+        <label>Date of Birth:</label>
+        <input type="date">
+
+        <label>Gender:</label>
+        <div class="gender">
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </div>
+
+        <label>Select Course:</label>
+        <select>
+            <option>Select Course</option>
+            <option>BCA</option>
+            <option>B.Tech</option>
+            <option>MCA</option>
+            <option>BBA</option>
+        </select>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
